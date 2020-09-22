@@ -126,6 +126,13 @@ body {
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 }
 
+@media only screen and (max-width: 37.5em) {
+  .move {
+    -webkit-transform: translateY(7rem);
+            transform: translateY(7rem);
+  }
+}
+
 .header {
   z-index: 1;
   position: -webkit-sticky;
@@ -136,7 +143,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 7rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -410,7 +416,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .contact,
   .contact2 {
-    padding: 2rem;
+    padding: 8rem 2rem;
   }
 }
 
@@ -425,6 +431,13 @@ body {
   border-radius: 0.7rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .contact__formarea,
+  .contact2__formarea {
+    width: 49rem;
+  }
+}
+
 .contact__heading,
 .contact2__heading {
   text-align: center;
@@ -433,12 +446,26 @@ body {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .contact__heading,
+  .contact2__heading {
+    font-size: 2rem;
+  }
+}
+
 .contact__paragraph,
 .contact2__paragraph {
   text-align: center;
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__paragraph,
+  .contact2__paragraph {
+    font-size: 1.2rem;
+  }
 }
 
 .contact__form__input,
@@ -479,6 +506,13 @@ body {
   border-color: orange;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .contact__form__input,
+  .contact2__form__input {
+    font-size: 1.5rem;
+  }
+}
+
 .contact__submit,
 .contact2__submit {
   text-align: center;
@@ -504,6 +538,12 @@ body {
 .form__textarea {
   height: 20rem;
   resize: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form__textarea {
+    height: 15rem;
+  }
 }
 
 .contact2 {

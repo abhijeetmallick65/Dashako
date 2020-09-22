@@ -4,7 +4,7 @@
 
   padding: 10rem 0;
   @media only screen and (max-width: $bp-small) {
-    padding: 2rem;
+    padding: 8rem 2rem;
   }
 
   &__formarea {
@@ -14,18 +14,27 @@
     background-color: rgba($color: #fff, $alpha: 0.5);
     box-shadow: 0 1.5rem 3rem rgba($color: $color-text, $alpha: 0.3);
     border-radius: 0.7rem;
+    @media only screen and (max-width: $bp-small) {
+      width: 49rem;
+    }
   }
   &__heading {
     text-align: center;
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
   }
   &__paragraph {
     text-align: center;
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
   }
 
   &__form__input {
@@ -50,6 +59,9 @@
     &:invalid {
       border-color: orange;
     }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+    }
   }
   &__submit {
     text-align: center;
@@ -70,6 +82,9 @@
 .form__textarea {
   height: 20rem;
   resize: none;
+  @media only screen and (max-width: $bp-small) {
+    height: 15rem;
+  }
 }
 
 .contact2 {
