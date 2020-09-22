@@ -1,0 +1,130 @@
+// FONT VARIABLES
+$font-primary: "Roboto", sans-serif;
+
+//COLOR VARIABLES
+$color-white: white;
+$Light-green: #7ed56f;
+$Medium-green: #55c57a;
+$Dark-green: #28b485;
+$color-text: #000;
+
+$footer-1: #333;
+
+$Dark-blue: #26abff;
+$Medium-blue: #59bfff;
+$Light-blue: #8cd3ff;
+
+$Light-grey: #eee;
+
+//Border
+$border-bottom: 1px solid transparent;
+//Common properties
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+//Break Points
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$bp-smallall: 22em;
+//code
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 60%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 40%;
+  }
+  @media only screen and (max-width: $bp-smallall) {
+    font-size: 30%;
+  }
+}
+
+body {
+  // padding: 3rem;
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $color-text;
+  // height: 200vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  // border: 1px solid red;
+}
+
+.current {
+  border-bottom: 1px solid white !important;
+}
+
+::selection {
+  background-color: $Medium-green;
+  color: $color-white;
+}
+
+//utilities
+.externalhead {
+  &--large {
+    text-align: center;
+    color: transparent;
+    font-size: 5rem;
+    background-image: linear-gradient(to right, $Light-green, $Dark-green);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 4rem 0;
+    text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem 0;
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1rem 0;
+      font-size: 2rem;
+    }
+    &:hover {
+      transform: translatey(-0.5rem);
+      text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}

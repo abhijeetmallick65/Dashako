@@ -1,0 +1,143 @@
+.contact,
+.contact2 {
+  background-image: linear-gradient(to right bottom, $Light-blue, $Dark-blue);
+
+  padding: 10rem 0;
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem;
+  }
+
+  &__formarea {
+    width: 55rem;
+    padding: 1.5rem 3rem;
+    border: 1px solid $color-white;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    box-shadow: 0 1.5rem 3rem rgba($color: $color-text, $alpha: 0.3);
+    border-radius: 0.7rem;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  &__paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  &__form__input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 1.5rem 3rem;
+    margin: 2.5rem;
+    width: 90%;
+    border-radius: 1rem;
+    font-family: $font-primary;
+    color: $color-text;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    &:focus {
+      border-color: $Medium-blue;
+    }
+    &::selection {
+      background-color: $Dark-blue;
+      color: $color-white;
+    }
+    &:invalid {
+      border-color: orange;
+    }
+  }
+  &__submit {
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 50%;
+    background-color: $color-white;
+    transform: translateX(40%);
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      transform: translate(40%, -3px);
+      box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}
+
+.form__textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.contact2 {
+  padding: 5rem 0;
+
+  &__formarea {
+    width: auto;
+    padding: 1.5rem 1.5rem;
+    border: 1px solid $color-white;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    box-shadow: 0 1.5rem 3rem rgba($color: $color-text, $alpha: 0.3);
+    border-radius: 0.7rem;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  &__paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  &__form__input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1.5rem;
+    width: 90%;
+    border-radius: 1rem;
+    font-family: $font-primary;
+    color: $color-text;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    &:focus {
+      border-color: $Medium-blue;
+    }
+    &::selection {
+      background-color: $Dark-blue;
+      color: $color-white;
+    }
+    &:invalid {
+      border-color: orange;
+    }
+  }
+  &__submit {
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 50%;
+    background-color: $color-white;
+    transform: translateX(40%);
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      transform: translate(40%, -3px);
+      box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}
+
+.contact2 {
+  .form__textarea {
+    height: 12rem;
+    resize: none;
+  }
+}

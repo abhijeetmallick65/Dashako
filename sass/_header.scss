@@ -1,0 +1,123 @@
+.header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to right bottom, $Light-green, $Dark-green);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7rem;
+  @media only screen and (max-width: $bp-small) {
+    height: 100%;
+    text-align: center;
+  }
+  .progress-container {
+    width: 100%;
+    height: 0.5rem;
+    background: white;
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+  .progress-bar {
+    height: 0.5rem;
+    background: $Dark-green;
+    width: 0%;
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      // height: 100%;
+      justify-content: space-around;
+      // width: 100%;
+      // transform: translateX(2%);
+    }
+
+    // &__logo {
+    //   //comment
+    // }
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+    &__listitem {
+      padding: 1rem 2rem;
+      margin: 0 0.5rem;
+      font-size: 1.6rem;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.2rem;
+      }
+
+      a {
+        color: $color-white;
+        padding-bottom: 0.5rem;
+        font-weight: 400;
+        border-bottom: $border-bottom;
+        // border-width: 20%;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          border-bottom-color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.hover {
+  position: relative;
+  &__item {
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__items {
+    color: black !important;
+    font-size: 1.3rem;
+    transition: all 0s !important;
+    padding: 1rem 2rem;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    i {
+      margin-right: 1rem;
+    }
+    // border-radius: 1rem;
+
+    &:hover {
+      background-color: $Light-green;
+      color: white !important;
+    }
+  }
+}
+
+.hover:hover {
+  .hover__item {
+    visibility: visible;
+  }
+  .hover__items {
+    visibility: visible;
+  }
+}
+
+.hover__items:not(:last-child) {
+  border-bottom: 1px dotted black !important;
+}
