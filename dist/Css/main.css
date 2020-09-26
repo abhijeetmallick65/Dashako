@@ -126,13 +126,6 @@ body {
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 37.5em) {
-  .move {
-    -webkit-transform: translateY(7rem);
-            transform: translateY(7rem);
-  }
-}
-
 .header {
   z-index: 1;
   position: -webkit-sticky;
@@ -1289,7 +1282,7 @@ body {
   margin: 0.5rem;
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 68.75em) {
   .products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
