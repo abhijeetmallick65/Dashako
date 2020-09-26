@@ -1282,7 +1282,7 @@ body {
   margin: 0.5rem;
 }
 
-@media only screen and (max-width: 68.75em) {
+@media only screen and (max-width: 87em) {
   .products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
