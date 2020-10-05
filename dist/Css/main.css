@@ -293,6 +293,11 @@ body {
   border-bottom: 1px dotted black !important;
 }
 
+.navbar__logo--img {
+  height: 5rem;
+  width: 5rem;
+}
+
 .findusat {
   position: relative;
 }
@@ -625,6 +630,13 @@ body {
   resize: none;
 }
 
+.contact {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  margin: 0.5rem 0;
+  border: 1px solid white;
+}
+
 .map__section__map {
   width: 100%;
   border: 1px solid white;
@@ -685,25 +697,14 @@ body {
 
 .footer__listitem {
   cursor: pointer;
-  padding: 1.5rem 3rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .footer__listitem a {
   font-weight: 400;
-}
-
-.footer__listitem:hover {
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-}
-
-.footer__listitem:hover a {
-  color: #7ed56f;
 }
 
 .footer__listitem__item {
@@ -712,6 +713,14 @@ body {
   color: #f7f7f7;
   text-transform: uppercase;
   font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+}
+
+.footer__listitem__item:hover {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  color: #7ed56f;
 }
 
 .footer .social {
@@ -750,9 +759,29 @@ body {
   color: #55c57a;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .logo-img {
-  height: 3rem;
-  width: 3rem;
+  height: 40%;
+  width: 40%;
+  display: block;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .gallery {
@@ -899,7 +928,7 @@ body {
 
 .aboutus {
   height: 81vh;
-  background-image: url("../img/6.jpg");
+  background-image: url("../img/extra/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1138,8 +1167,8 @@ body {
 .nature__text {
   height: 50rem;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), color-stop(40%, rgba(0, 0, 0, 0.3)), to(transparent)), url("../img/3.jpg");
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 40%, transparent), url("../img/3.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), color-stop(40%, rgba(0, 0, 0, 0.3)), to(transparent)), url("../img/extra/background.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 40%, transparent), url("../img/extra/background.jpg");
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
   border-radius: 3px;

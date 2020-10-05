@@ -156,3 +156,9 @@
     resize: none;
   }
 }
+
+.contact {
+  background-image: linear-gradient(to right bottom, $Light-green, $Dark-green);
+  margin: 0.5rem 0;
+  border: 1px solid white;
+}

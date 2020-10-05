@@ -120,3 +120,8 @@
 .hover__items:not(:last-child) {
   border-bottom: 1px dotted black !important;
 }
+
+.navbar__logo--img {
+  height: 5rem;
+  width: 5rem;
+}
