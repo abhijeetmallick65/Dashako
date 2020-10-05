@@ -750,6 +750,11 @@ body {
   color: #55c57a;
 }
 
+.logo-img {
+  height: 3rem;
+  width: 3rem;
+}
+
 .gallery {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#fffcff), to(#d5fefd));
   background-image: linear-gradient(to right bottom, #fffcff, #d5fefd);
