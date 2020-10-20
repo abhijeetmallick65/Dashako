@@ -413,7 +413,10 @@
             placeholder="Enter your query here"
             class="contact__form__input form__textarea"
           ></textarea>
-          <button type="submit" class="contact__submit contact__form__input">
+          <button
+            type="submit"
+            class="contact__submit contact__form__input button"
+          >
             Submit
           </button>
         </form>
@@ -492,6 +495,11 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
       }
+
+      //button
+      document.querySelector(".button").addEventListener("click", () => {
+        form.submit();
+      });
 
       //header nav
       var name1 = ".navbar__listitem__item";
