@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/04f48b1722.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./Css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/extra/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./img/extra/favicon.ico" type="image/x-icon" />
+    <title>Dashako Products : About Us</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="container navbar">
+        <div class="navbar__logo">
+          <a href="#aboutus"
+            ><img
+              class="navbar__logo--img"
+              src="./img/extra/logo.png"
+              alt="Logo"
+          /></a>
+        </div>
+        <ul class="navbar__list">
+          <li class="navbar__listitem">
+            <a href="./index.html" class="navbar__listitem__item">Home</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </header>
+    <div class="externalhead">
+      <h1 class="externalhead--large">HI EVERYONE,</h1>
+    </div>
+    <div class="container aboutusnewpage">
+      <!-- <h2 class="aboutusnewpage_head">HI EVERYONE,</h2> -->
+      <p class="aboutusnewpage_para">
+        We all are facing the challenges of nature due to the rapid
+        industrialization and insensitive use of our resources polluting the
+        earth, endangering life of not only humans but the complete animal
+        kingdom.
+      </p>
+      <p class="aboutusnewpage_para">
+        Problems on earth are diverse: underdevelopment, poverty, drought and
+        famine, environmental depletion, wastage, waste of resources etc. We all
+        should aim for Sustainable Development to solve these problems and
+        create a situation that is of long-term durability for all present and
+        future generations, known as intra- and intergenerational equity. The
+        concept has three main pillars: social, economic and ecological aspects.
+      </p>
+      <p class="aboutusnewpage_para">
+        We at Dashako Products endeavor to contribute to the above mentioned
+        responsibility by promoting the use of bio-degradable natural products
+        by collaborating with various NGOs who work for the welfare of the rural
+        fork by promoting self-help groups, women empowerment and creating
+        employment and support for agricultural based products. In the process
+        we would like to reach you with various items made out of natural leaves
+        and agriculture based items made by the rural folks and artisans, to
+        suit for special occasions.
+      </p>
+      <p class="aboutusnewpage_para">
+        We are confident that you will like the products being offered by us and
+        will cherish your support for the use of the products.
+      </p>
+      <p class="aboutusnewpage_para">
+        Thanking You, for joining us in the continuous struggle and contribution
+        for social welfare and support for the sustainability initiatives.
+      </p>
+    </div>
+    <footer class="footer">
+      <div class="footer__main-footer container">
+        <ul class="footer__list">
+          <li class="footer__listitem">
+            <a href="#aboutus" class="footer__listitem__item">Home</a>
+          </li>
+        </ul>
+
+        <div class="logo">
+          <a href="#header"
+            ><img class="logo-img" src="./img/extra/logo.png" alt="Logo"
+          /></a>
+        </div>
+
+        <div class="footer__social">
+          <h2>Contact Us</h2>
+          <div>
+            <h4>Email us at :</h4>
+            <p>dashakoproducts@gmail.com</p>
+          </div>
+          <div>
+            <h4>Contact Us At :</h4>
+            <p>+91-9311023778</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      //header
+
+      //header opacity
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 150) {
+          document.querySelector(".header").style.opacity = 0.9;
+        } else {
+          document.querySelector(".header").style.opacity = 1;
+        }
+      });
+
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      //header progress bar
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+
+      //header nav
+      var name1 = ".navbar__listitem__item";
+      var name2 = ".map__section__map";
+      window.addEventListener("hashchange", () => {
+        var x = window.location.hash;
+        console.log(x);
+        var y = Array.from(
+          document.querySelectorAll(".navbar__listitem__item")
+        );
+        y.forEach((el) => el.classList.remove("current"));
+        document
+          .querySelector(".map__section__map")
+          .classList.remove("current");
+        document.querySelector(`a[href="${x}"]`).classList.add("current");
+      });
+    </script>
+  </body>
+</html>

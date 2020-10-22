@@ -785,6 +785,18 @@ body {
           transform: translateX(50%);
 }
 
+.footer__social {
+  font-size: 1.2rem;
+}
+
+.footer__social div {
+  margin-top: 1rem;
+}
+
+.footer__social div > * {
+  margin-top: 0.5rem;
+}
+
 .gallery {
   margin: 1rem;
 }
@@ -1048,6 +1060,20 @@ body {
     -webkit-transform: translatey(0);
             transform: translatey(0);
   }
+}
+
+.aboutusnewpage {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.aboutusnewpage_head {
+  margin: 1rem;
+}
+
+.aboutusnewpage_para {
+  margin: 1rem;
+  font-weight: 400;
 }
 
 .nature {
@@ -1443,5 +1469,9 @@ body {
   .products__arecaleafplate--3 img {
     height: 100%;
   }
+}
+
+.products__sanitizer__image {
+  border: 1px solid black !important;
 }
 /*# sourceMappingURL=main.css.map */

@@ -139,3 +139,15 @@
     transform: translatey(0);
   }
 }
+
+.aboutusnewpage {
+  text-align: center;
+  font-size: 2rem;
+  &_head {
+    margin: 1rem;
+  }
+  &_para {
+    margin: 1rem;
+    font-weight: 400;
+  }
+}
